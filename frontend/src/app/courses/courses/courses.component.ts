@@ -1,9 +1,9 @@
-import { MatSnackBar } from '@angular/material/snack-bar';
-import { CoursesService } from './../services/courses.service';
 import { Component, OnInit } from '@angular/core';
-import { Course } from '../model/course';
-import { Observable, of } from 'rxjs';
+import { Observable } from 'rxjs';
 import { catchError } from 'rxjs/operators';
+
+import { Course } from '../model/course';
+import { CoursesService } from './../services/courses.service';
 
 @Component({
   selector: 'app-courses',

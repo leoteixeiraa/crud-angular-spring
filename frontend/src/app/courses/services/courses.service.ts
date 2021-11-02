@@ -1,10 +1,10 @@
-import { AppMaterialModule } from './../../shared/app-material/app-material.module';
-import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
-import { Course } from './../model/course';
-import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { delay, first, tap, catchError } from 'rxjs/operators';
+import { Injectable } from '@angular/core';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { EMPTY, Observable } from 'rxjs';
+import { delay, first, tap } from 'rxjs/operators';
+
+import { Course } from './../model/course';
 
 @Injectable({
   providedIn: 'root'
